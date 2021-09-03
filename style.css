@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +13,7 @@ body {
   min-height: 100vh;
   /* background: linear-gradient(45deg, #99c1c4, #dcf7fa); */
   background: linear-gradient(45deg, #d3dede, #f2fafa);
+  font-family: "Cabin", sans-serif;
 }
 
 .drops {
@@ -68,4 +71,31 @@ body {
 .drop:nth-child(4) {
   transform: scale(0.3) translate(-180px, -360px);
   border-radius: 45% 55% 58% 42% / 58% 33% 67% 42%;
+}
+
+footer {
+  position: fixed;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 90px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: #579494;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #84c7c7;
+}
+
+@media (min-width: 968px) {
+  footer {
+    font-size: 0.875rem;
+  }
 }
