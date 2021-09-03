@@ -1,73 +1,71 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    /* background: linear-gradient(45deg, #99c1c4, #dcf7fa); */
-    background: linear-gradient(45deg, #d3dede, #f2fafa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background: linear-gradient(45deg, #99c1c4, #dcf7fa); */
+  background: linear-gradient(45deg, #d3dede, #f2fafa);
 }
 
 .drops {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .drop {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    background: rgba(153, 193, 196, 0.02);
-    border-radius: 65% 35% 56% 44% / 43% 35% 65% 57%;
-    box-shadow: inset -10px 10px 10px rgba(0, 0, 0, 0.05),
-                -15px 25px 10px rgba(0, 0, 0, 0.1),
-                -15px 20px 20px rgba(0, 0, 0, 0.05),
-                inset 10px -10px 15px rgba(255, 255, 255, 0.5);
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: rgba(153, 193, 196, 0.02);
+  border-radius: 65% 35% 56% 44% / 43% 35% 65% 57%;
+  box-shadow: inset -10px 10px 10px rgba(0, 0, 0, 0.05),
+    -15px 25px 10px rgba(0, 0, 0, 0.1), -15px 20px 20px rgba(0, 0, 0, 0.05),
+    inset 10px -10px 15px rgba(255, 255, 255, 0.5);
 }
 
 .drop:before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 25px;
-    left: 100px;
-    background: rgba(255, 255, 255, 0.75);
-    border-radius: 54% 46% 51% 49% / 43% 49% 51% 57%;
-    box-shadow: 1px -1px 8px rgba(255, 255, 255, 0.8);
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 25px;
+  left: 100px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 54% 46% 51% 49% / 43% 49% 51% 57%;
+  box-shadow: 1px -1px 8px rgba(255, 255, 255, 0.8);
 }
 
-
 .drop:after {
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    top: 20px;
-    left: 75px;
-    background: rgba(255, 255, 255, 0.75);
-    border-radius: 59% 41% 62% 38% / 37% 49% 51% 63%;
-    box-shadow: 1px -1px 4px rgba(255, 255, 255, 0.8);
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 20px;
+  left: 75px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 59% 41% 62% 38% / 37% 49% 51% 63%;
+  box-shadow: 1px -1px 4px rgba(255, 255, 255, 0.8);
 }
 
 .drop:nth-child(2) {
-    transform: scale(0.5) translate(-250px, 190px);
-    border-radius: 73% 27% 39% 61% / 65% 54% 46% 35%;
+  transform: scale(0.5) translate(-250px, 190px);
+  border-radius: 73% 27% 39% 61% / 65% 54% 46% 35%;
 }
 
 .drop:nth-child(3) {
-    transform: scale(0.4) translate(285px, 70px);
-    border-radius: 45% 55% 50% 50% / 65% 48% 52% 35%;
+  transform: scale(0.4) translate(285px, 70px);
+  border-radius: 45% 55% 50% 50% / 65% 48% 52% 35%;
 }
 
 .drop:nth-child(4) {
-    transform: scale(0.3) translate(-180px, -360px);
-    border-radius: 45% 55% 58% 42% / 58% 33% 67% 42%;
+  transform: scale(0.3) translate(-180px, -360px);
+  border-radius: 45% 55% 58% 42% / 58% 33% 67% 42%;
 }
